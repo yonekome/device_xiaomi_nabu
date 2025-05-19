@@ -42,3 +42,20 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="nabu_global-user 13 RKQ1.200826.002 V816.0.1.0.TKXMIXM release-keys" \
     BuildFingerprint=Xiaomi/nabu_global/nabu:13/RKQ1.200826.002/V816.0.1.0.TKXMIXM:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
+
+# Rising OS
+RISING_MAINTAINER="yonekome"
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Qualcomm Snapdragon 860" \
+    RisingMaintainer="yonekome"
+
+RISING_MAINTAINER := yonekome
+
+TARGET_ENABLE_BLUR := false
+PRODUCT_NO_CAMERA := false
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false 
+
+WITH_GMS := true
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
+TARGET_INCLUDE_GOOGLE_DIALER := false
