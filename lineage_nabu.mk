@@ -30,14 +30,23 @@ endif
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-# crDroid build flag
-TARGET_ENABLE_BLUR := true
-
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_DEVICE := nabu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Xiaomi Pad 5
+
+# Rising Revived OS
+RISING_MAINTAINER="yonekome"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 860" \
+    RisingMaintainer="yonekome"
+RISING_MAINTAINER := yonekome
+TARGET_ENABLE_BLUR := true
+
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := false
+WITH_MICROG := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
