@@ -317,6 +317,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.1.vendor
 
+#Lawnchair
+PRODUCT_PACKAGES_REMOVE += \
+    Lawnchair \
+    LawnchairOverlay \
+    Lawnicons
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
