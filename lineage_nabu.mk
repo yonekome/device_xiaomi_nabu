@@ -36,19 +36,12 @@ PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Xiaomi Pad 5
 
-# Rising Revived OS
-RISING_MAINTAINER="yonekome"
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Snapdragon 860" \
-    RisingMaintainer="yonekome"
-RISING_MAINTAINER := yonekome
-TARGET_ENABLE_BLUR := true
-PRODUCT_NO_CAMERA := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false 
-
-WITH_GMS := true
-TARGET_USES_PICO_GAPPS := false
-WITH_MICROG := false
+# Project Infinity X stuff
+INFINITY_MAINTAINER := "yonekome"
+WITH_GAPPS := true
+ro.product.marketname=Xiaomi Pad 5
+ro.infinity.soc=Snapdragon 860
+ro.infinity.camera=13MP
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
