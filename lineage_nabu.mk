@@ -13,6 +13,7 @@
 # limitations under the License.
 
 # Inherit some common LineageOS stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit some common AOSP stuff.
@@ -30,9 +31,6 @@ endif
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-# crDroid build flag
-TARGET_ENABLE_BLUR := true
-
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_DEVICE := nabu
 PRODUCT_BRAND := Xiaomi
@@ -46,19 +44,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Xiaomi/nabu_global/nabu:13/RKQ1.200826.002/V816.0.1.0.TKXMIXM:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
-# Rising OS
-RISING_MAINTAINER="yonekome"
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingChipset="Qualcomm Snapdragon 860" \
-    RisingMaintainer="yonekome"
-
-RISING_MAINTAINER := yonekome
-
-TARGET_ENABLE_BLUR := false
-PRODUCT_NO_CAMERA := false
-TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false 
-
-WITH_GMS := true
-TARGET_DEFAULT_PIXEL_LAUNCHER := true
-TARGET_INCLUDE_GOOGLE_DIALER := false
+# Axion AOSP
+AXION_CAMERA_REAR_INFO := 13
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := yonekome
+AXION_PROCESSOR := Qualcomm_Snapdragon_860
