@@ -301,6 +301,11 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder.vendor
 
+# HWControl
+PRODUCT_PACKAGES += \
+    custom.hardware.hwcontrol-service \
+    custom.hardware.hwcontrol.vintf
+
 # IPACM
 PRODUCT_PACKAGES += \
     ipacm \
