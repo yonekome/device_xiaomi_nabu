@@ -477,12 +477,3 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/nabu/nabu-vendor.mk)
-
-# Remove apps
-PRODUCT_PACKAGES -= ViPER4AndroidFX
-PRODUCT_PACKAGES -= Bcr
-PRODUCT_PACKAGES -= Etar
-PRODUCT_PACKAGES -= Jelly
-PRODUCT_PACKAGES -= Recorder
-PRODUCT_PACKAGES -= Twelve
-PRODUCT_PACKAGES -= Contacts
