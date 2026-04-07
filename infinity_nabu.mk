@@ -39,9 +39,6 @@ PRODUCT_MODEL := Xiaomi Pad 5
 # Project Infinity X stuff
 INFINITY_MAINTAINER := "yonekome"
 WITH_GAPPS := true
-ro.product.marketname=Xiaomi Pad 5
-ro.infinity.soc=Snapdragon 860
-ro.infinity.camera=13MP
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
