@@ -33,6 +33,9 @@ ro.infinity.camera=R 13MP/F 8MP
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
 
+# Baseband
+gsm.version.baseband?=Wi-Fi Only
+
 # LogSpamControl
 persist.log.tag.vendor.qti.bluetooth@1.0-ibs_handler=S
 persist.log.tag.ACDB-LOADER=S
