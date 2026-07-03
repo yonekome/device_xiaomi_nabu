@@ -28,7 +28,7 @@ ro.netflix.bsp_rev=Q855-16947-1
 # Project Infinity X
 ro.product.marketname=Xiaomi Pad 5
 ro.infinity.soc=Snapdragon 860
-ro.infinity.camera=R 13MP/F 8MP
+ro.infinity.camera=13MP / 8MP
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
